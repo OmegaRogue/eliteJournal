@@ -1,7 +1,7 @@
 package elite
 
 import (
-	"github.com/eliteJournal/journal"
+	"github.com/OmegaRogue/eliteJournal/journal"
 )
 
 type SLEF struct {
