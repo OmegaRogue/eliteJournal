@@ -1,6 +1,7 @@
 package journal
 
 // FileHeader fileheader
+//goland:noinspection SpellCheckingInspection
 type FileHeader struct {
 	Event
 	Part        int    `json:"part"`
