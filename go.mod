@@ -1,3 +1,3 @@
-module github.com/eliteJournal
+module github.com/OmegaRogue/eliteJournal
 
 go 1.16
