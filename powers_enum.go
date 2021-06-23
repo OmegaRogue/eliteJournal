@@ -213,12 +213,11 @@ func (x *NullPower) Scan(value interface{}) (err error) {
 	}
 
 	err = x.Power.Scan(value)
-	x.Valid = (err == nil)
+	x.Valid = err == nil
 	return
 }
 
 // Value implements the driver Valuer interface.
-
 func (x NullPower) Value() (driver.Value, error) {
 	if !x.Valid {
 		return nil, nil
@@ -228,7 +227,6 @@ func (x NullPower) Value() (driver.Value, error) {
 }
 
 // MarshalJSON correctly serializes a NullPower to JSON.
-//goland:noinspection GoReceiverNames
 func (n NullPower) MarshalJSON() ([]byte, error) {
 	const nullStr = "null"
 	if n.Valid {
@@ -238,7 +236,6 @@ func (n NullPower) MarshalJSON() ([]byte, error) {
 }
 
 // UnmarshalJSON correctly deserializes a NullPower from JSON.
-//goland:noinspection GoReceiverNames
 func (n *NullPower) UnmarshalJSON(b []byte) error {
 	n.Set = true
 	var x interface{}
