@@ -174,7 +174,7 @@ func (x *Allegiance) Scan(value interface{}) (err error) {
 
 // Value implements the driver Valuer interface.
 func (x Allegiance) Value() (driver.Value, error) {
-	return x.String(), nil
+	return int64(x), nil
 }
 
 type NullAllegiance struct {

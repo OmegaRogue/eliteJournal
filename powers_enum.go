@@ -190,7 +190,7 @@ func (x *Power) Scan(value interface{}) (err error) {
 
 // Value implements the driver Valuer interface.
 func (x Power) Value() (driver.Value, error) {
-	return x.String(), nil
+	return int64(x), nil
 }
 
 type NullPower struct {

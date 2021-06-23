@@ -166,7 +166,7 @@ func (x *Rank) Scan(value interface{}) (err error) {
 
 // Value implements the driver Valuer interface.
 func (x Rank) Value() (driver.Value, error) {
-	return x.String(), nil
+	return int64(x), nil
 }
 
 type NullRank struct {

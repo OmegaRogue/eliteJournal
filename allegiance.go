@@ -1,4 +1,4 @@
-//go:generate go-enum -f=$GOFILE --marshal --noprefix --sql --sqlnullint
+//go:generate go-enum -f=$GOFILE --marshal --noprefix --sqlnullint
 
 package elite
 
