@@ -7,6 +7,8 @@ type Cargo struct {
 	Count     int         `json:"Count"`
 	Inventory []CargoItem `json:"Inventory"`
 }
+
+// CargoItem represents a type of Commodity in Cargo
 type CargoItem struct {
 	MissionID int `json:"MissionID,omitempty"`
 	LocalizedValue

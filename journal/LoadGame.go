@@ -1,5 +1,6 @@
 package journal
 
+// LoadGame LoadGame
 type LoadGame struct {
 	Event
 	FID           string  `json:"FID"`

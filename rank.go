@@ -1,4 +1,5 @@
 //go:generate go-enum -f=$GOFILE --marshal --noprefix --sqlnullint
+
 package elite
 
 // Rank is an enumeration of Elite Dangerous Ranks

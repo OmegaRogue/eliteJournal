@@ -1,5 +1,6 @@
 package journal
 
+// Statistics Statistics
 type Statistics struct {
 	Event
 	BankAccount struct {
