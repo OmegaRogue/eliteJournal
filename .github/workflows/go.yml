@@ -18,6 +18,9 @@ jobs:
         with:
           go-version: 1.16
 
+      - name: Install go-enum
+        run: go get github.com/abice/go-enum
+
       - name: Generate
         run: go generate -v ./...
       - name: Run golangci-lint
