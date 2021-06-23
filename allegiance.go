@@ -2,7 +2,7 @@
 
 package elite
 
-// Allegiance is an enumeration of Elite Dangerous Allegiances
+// Allegiance is an enumeration of Elite Dangerous Allegiances with Major Factions
 /*
 ENUM(
 Independent
