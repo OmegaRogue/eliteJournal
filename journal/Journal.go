@@ -23,7 +23,7 @@ import (
 )
 
 // Cost represents a Price in credits
-type Cost int
+type Cost float64
 
 // Event contains the common fields present in all journal events
 type Event struct {

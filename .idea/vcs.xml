@@ -11,8 +11,8 @@
     <option name="links">
       <list>
         <IssueNavigationLink>
-          <option name="issueRegexp" value="Task_([A-Za-z]+)_(\d+)" />
-          <option name="linkRegexp" value="https://github.com/OmegaRogue/eliteJournal/issues/$1/$2" />
+          <option name="issueRegexp" value=".*?(\d+)" />
+          <option name="linkRegexp" value="https://github.com/OmegaRogue/eliteJournal/issues/$1" />
         </IssueNavigationLink>
       </list>
     </option>
