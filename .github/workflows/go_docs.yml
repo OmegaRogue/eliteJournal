@@ -13,4 +13,5 @@ jobs:
     steps:
       - name: Pull new module version
         uses: andrewslotin/go-proxy-pull-action@master
-      - uses: creekorful/goreportcard-action@v1.0
+      - name: Update Go Reportcard
+        uses: creekorful/goreportcard-action@v1.0
