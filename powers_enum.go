@@ -26,6 +26,8 @@ import (
 	"errors"
 	"fmt"
 	"strconv"
+
+	"github.com/rs/zerolog"
 )
 
 const (
@@ -262,4 +264,8 @@ func (n *NullPower) UnmarshalJSON(b []byte) error {
 	}
 	err = n.Scan(x)
 	return err
+}
+
+func (x Power) MarshalZerologObject(e *zerolog.Event) {
+	e.Str("Power", fmt.Sprint(x))
 }

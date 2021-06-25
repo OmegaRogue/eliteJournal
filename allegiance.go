@@ -15,7 +15,7 @@
  *     along with eliteJournal.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-//go:generate go-enum -f=$GOFILE --marshal --noprefix --sqlnullint
+//go:generate go-enum -f=$GOFILE --marshal --noprefix --sqlnullint -t assets/zerolog.gotmpl
 
 package elite
 
